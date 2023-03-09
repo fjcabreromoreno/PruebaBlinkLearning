@@ -1,0 +1,136 @@
+/* COMMON STYLES */
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body,
+html {
+  font-family: 'Roboto', cursive;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.button {
+  align-items: center;
+  background-color: #e5e5e5;
+  border: solid 1px #666666;
+  border-radius: 8px;
+  box-shadow: inset 0px 1px 0px #c1bebc, 0px 1px 0px #8a8383;
+  color: #666666;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button::before {
+  background-color: #ccd0d5;
+  border-radius: 10px;
+  border: 2px solid #666666;
+  content: '';
+  display: block;
+  height: 100%;
+  left: -10px;
+  padding: 8px;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  z-index: -1;
+  -o-box-shadow: inset 0px 1px 1px #909193, 0px 1px 0px #fff;
+  box-shadow: inset 0px 1px 1px #909193, 0px 1px 0px #fff;
+}
+
+.button:hover {
+  background-color: #7dcfb6;
+  cursor: pointer;
+}
+
+.leftStar {
+  margin-right: 10px;
+}
+
+.rightStar {
+  margin-left: 10px;
+}
+
+/* WELCOME */
+h1 {
+  background-image: linear-gradient(to left, #7dcfb6, #00b2ca);
+  background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  font-weight: 600;
+  -webkit-background-clip: text;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* HOME */
+
+ul {
+  list-style: none;
+}
+
+li::before {
+  content: '•';
+  color: red;
+  display: inline-block;
+  margin-left: -4em;
+  width: 2em;
+}
+
+/* TASKS */
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tasksContainer {
+  display: flex;
+  height: '100%';
+  justify-content: center;
+}
+
+.tasksWrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskColumn {
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  min-height: 500px;
+  padding: 4px;
+  width: 250px;
+}
+
+.taskCard {
+  border-radius: 4px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  min-height: 50px;
+  padding: 16px;
+  user-select: 'none';
+}
+
+[data-rbd-drag-handle-context-id='0'] {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
